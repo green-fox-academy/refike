@@ -1,0 +1,84 @@
+body {
+        background-image: url(topography.png);
+        margin: 0;
+}
+
+#page {
+    padding: 10%;
+    
+}
+#page h1{
+    font-size: 40px;
+}
+
+h3 {
+    color: #ff0099
+}
+
+#nav div{
+    text-align: right;
+    float: right;
+    
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10%;
+
+}
+
+#nav div a{
+    color: #ff0099;
+     font-family: consolas, courier;
+    
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+header {
+   
+    background-image: url(kepkepkep.svg);
+    background-repeat: no-repeat;
+    background: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+        
+
+    height: 40px;
+
+}
+
+img {
+    
+    margin: 0 0 0 10%;
+}
+
+h2 {
+    
+    text-align: center;
+}
+
+#base-text p{
+    font-family: consolas, courier;
+}
+
+#about p{
+        font-family: consolas, courier;
+
+}
+
+#pontok p{
+        text-align: center;
+    padding: 20px 20px;
+    font-size: 30px;
+
+    
+}
+
+body h1,h2,h3 {
+    font-family: 'Mali', cursive;
+}
+
