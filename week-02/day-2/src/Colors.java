@@ -18,8 +18,7 @@ public class Colors {
                 {"orange red", "red", "tomato"},
                 {"orchid", "violet", "pink", "hot pink"}
         };
-        for (int i = 0; i < colors.length; i++) {
-            System.out.println(colors[0][1]);
+       // for (int i = 0; i < colors.length; i++) {
+            System.out.println(colors[0][0]);
         }
     }
-}

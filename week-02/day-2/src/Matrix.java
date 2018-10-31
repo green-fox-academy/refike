@@ -12,6 +12,8 @@ public class Matrix {
         //   0 0 0 1
         //
         // - Print this two dimensional array to the output
+        System.out.println("Add a number: ");
+
         Scanner scanner = new Scanner(System.in);
         int myInt = scanner.nextInt();
 

@@ -44,7 +44,7 @@ public class variableMutation{
 
         int h = 135798745;
         // tell if it has 11 as a divisor (print as a boolean)
-        if (h/11 ==0) {
+        if (h%11 ==0) {
             System.out.println(true);
         } else {
             System.out.println(false);
@@ -55,7 +55,7 @@ public class variableMutation{
         int i1 = 10;
         int i2 = 3;
         // tell if i1 is higher than i2 squared and smaller than i2 cubed (print as a boolean)
-        if(i1 > (i2*2) && i1< i2*i2*i2) {
+        if(i1 > (i2*i2) && i1< i2*i2*i2) {
             System.out.println(true);
         } else {
             System.out.println(false);

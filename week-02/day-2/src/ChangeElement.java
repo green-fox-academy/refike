@@ -5,8 +5,8 @@ public class ChangeElement {
         // - Change the 8 to 4
         // - Print the fourth element
 
-        int[] s = {1,2,3,4,5,6};
-        s[3]=8;
+        int[] s = {1,2,3,8,5,6};
+        s[3]=4;
         System.out.println(s[3]);
     }
 }
