@@ -24,8 +24,6 @@ public class DrewPyramid {
             System.out.println(k);
             k += "**";
 
-
-
         }
     }
 }

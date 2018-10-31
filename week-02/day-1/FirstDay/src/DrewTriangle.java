@@ -14,6 +14,7 @@ public class DrewTriangle {
             String star = "";
             Scanner scanner = new Scanner(System.in);
             int number = scanner.nextInt();
+
             for (int i=0; i<number; i++) {
 
 
