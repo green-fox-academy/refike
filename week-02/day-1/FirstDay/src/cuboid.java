@@ -5,8 +5,8 @@ public class cuboid {
         double c = 4.3;
 
         double surface = 2* ((a*b)+ (a*c)+ (b*c));
-        double Volume = a*b*c;
-        System.out.println(surface);
-        System.out.println(Volume);
+        double volume = a*b*c;
+        System.out.println("surface: " + surface);
+        System.out.println("volume: " + volume);
     }
 }

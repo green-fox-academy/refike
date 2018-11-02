@@ -9,9 +9,9 @@ public class AnimalsAndLegs {
 
         Scanner scanner = new Scanner(System.in);
         Scanner scanner1 = new Scanner(System.in);
-        int userInput1 = scanner.nextInt();
-        int userInput2 = scanner.nextInt();
-        int legs = userInput1*2 + userInput2*4;
+        int chickens = scanner.nextInt();
+        int pigs = scanner.nextInt();
+        int legs = chickens*2 + pigs*4;
         System.out.println(legs);
 
     }

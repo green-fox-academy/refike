@@ -38,9 +38,10 @@ public class DrawDiagonal {
             System.out.print("\n");
         }
 
-        for (int c = 1; c <= number; c++) {
-            System.out.print("%");
+            for (int c = 1; c <= number; c++) {
+                System.out.print("%");
+            }
         }
     }
-}
+
 

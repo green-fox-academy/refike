@@ -4,6 +4,11 @@ public class swap {
         int b = 526;
         a = 526;
         b = 123;
-        System.out.println(a + " and " + b);
+        int c = a;
+        a = b;
+        b =c;
+
+        System.out.println(a);
+        System.out.println(b);
     }
 }

@@ -5,7 +5,7 @@ public class variableMutation{
 
         int b = 100;
         // make b smaller by 7
-        System.out.println(b-7);
+        System.out.println(b-=7);
 
         int c = 44;
         // please double c's value
@@ -44,7 +44,7 @@ public class variableMutation{
 
         int h = 135798745;
         // tell if it has 11 as a divisor (print as a boolean)
-        if (h%11 ==0) {
+        if (h/11 ==0) {
             System.out.println(true);
         } else {
             System.out.println(false);

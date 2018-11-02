@@ -21,8 +21,7 @@ public class GuessTheNumber {
         int guessedNumber = scanner.nextInt();
 
         while(number != guessedNumber) {
-            //if (number == guessedNumber) {
-            //  System.out.println("The guess was correct, Well done");
+
             if (number > guessedNumber) {
                 System.out.println("The stored number was higher, make an other guess!");
                 attempts++;

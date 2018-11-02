@@ -14,6 +14,8 @@ public class DrewPyramid {
 // The pyramid should have as many lines as the number was
 
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Add a number: ");
+
         int number = scanner.nextInt();
         String k = "*";
 

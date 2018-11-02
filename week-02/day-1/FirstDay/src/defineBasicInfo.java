@@ -4,6 +4,6 @@ public class defineBasicInfo {
         int myAge = 26;
         double myHeight = 1.85;
         boolean marriage = false;
-        System.out.println("I'm " + myName + " " + myAge + " old I am " + "My Height is " + myHeight + "Marriage? " + marriage);
+        System.out.println("I'm " + myName + " " + myAge + " years old I am " + "My Height is " + myHeight + "\n" + "Marriage? " + marriage);
     }
 }
