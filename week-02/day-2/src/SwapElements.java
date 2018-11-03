@@ -5,7 +5,8 @@ public class SwapElements {
         // - Swap the first and the third element of `abc`
 
         String[] abc = {"first","second","third"};
-         String swap = abc[0];
+
+            String swap = abc[0];
             abc[0] = abc[2];
             abc[2]= swap;
 

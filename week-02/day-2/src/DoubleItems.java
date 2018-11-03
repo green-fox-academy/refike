@@ -8,7 +8,5 @@ public class DoubleItems {
         for (int i=0;i < numList.length; i++) {
             System.out.println(numList[i]*2);
         }
-
-
-        }
+    }
 }

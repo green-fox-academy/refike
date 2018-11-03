@@ -14,10 +14,5 @@ public class SumAllElements {
             System.out.println(sum);
         }
     }
-//    public static int addElements (int myInt) {
-//        int total = 0;
-//        total += myInt;
-//      return total;
-//    }
 
 

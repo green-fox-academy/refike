@@ -14,11 +14,11 @@ public class Colors {
         //   `"orchid", "violet", "pink", "hot pink"`
 
 
-        String[][] colors = {{"lime", "forest green", "olive", "pale green", "spring green"},
+        String[][] colors = {
+                {"lime", "forest green", "olive", "pale green", "spring green"},
                 {"orange red", "red", "tomato"},
-                {"orchid", "violet", "pink", "hot pink"}
-        };
-       // for (int i = 0; i < colors.length; i++) {
+                {"orchid", "violet", "pink", "hot pink"}   };
+
             System.out.println(colors[0][0]);
-        }
     }
+}

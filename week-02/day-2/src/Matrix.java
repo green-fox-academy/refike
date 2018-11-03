@@ -12,6 +12,7 @@ public class Matrix {
         //   0 0 0 1
         //
         // - Print this two dimensional array to the output
+
         System.out.println("Add a number: ");
 
         Scanner scanner = new Scanner(System.in);
@@ -23,10 +24,10 @@ public class Matrix {
             for (int j = 0; j < myInt; j++) {
                 if(i==j){
                     myArray[i][j] = 1;
-                }else {
-                    myArray[i] [j] =0;
+
                 }
-                System.out.print(myArray[i][j]);
+               // else { myArray[i] [j] =0;
+                System.out.print(myArray[i][j]); // miért nyomtat j-re 0-át ?
             }
 
             System.out.println();

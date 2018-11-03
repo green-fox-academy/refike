@@ -9,7 +9,7 @@ public class Doubling {
     }
 
     public static void doubling (int number) {
-        int doubleValue = number * 2;
-        System.out.println(doubleValue);
+        number *= 2;
+        System.out.println(number);
     }
 }

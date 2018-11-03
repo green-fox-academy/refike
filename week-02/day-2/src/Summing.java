@@ -4,13 +4,15 @@ public class Summing {
         //  and main method on your own.
         // - Write a function called `sum` that sum all the numbers
         //   until the given parameter and returns with an integer
-        int num1 =5;
+
+
+        int num1 = 5;
         int num2 = 6;
-        System.out.println(sum(num1,num2));
+        System.out.println(sumTwoNumbers(num1,num2));
 
     }
 
-    public static int sum (int a, int b) {
+    public static int sumTwoNumbers (int a, int b) {
         int sum = a + b;
         return  sum;
     }
