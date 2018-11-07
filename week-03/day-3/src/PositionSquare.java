@@ -17,15 +17,12 @@ public class PositionSquare {
 
             int myFirstNum = (int)(Math.random()*(270)+1);
             int mySecondNum = (int)(Math.random()*(270)+1);
-            if(i<3) {
-                for (int a = 0; a < 3; a++) {
-                    graphics.drawRect(myFirstNum, mySecondNum, 50, 50);
-                }
-            }
-
-            }
-
+            graphics.drawRect(myFirstNum, mySecondNum, 50, 50);
+        }
     }
+
+
+
 
     // Don't touch the code below
     static int WIDTH = 320;

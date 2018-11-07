@@ -19,11 +19,11 @@ public class FourRectangles {
             int widht = (int)(Math.random()*((300-paraX)-10)+1)+10;
             int height = (int)(Math.random()*((300-paraY)-10)+1)+10;
 
-        if (i<4) {
-            graphics.setColor(new Color(myFirstNum, mySecondNum, myThirdNum));
-            graphics.drawRect(paraX, paraY, widht, height);
 
-        }
+                graphics.setColor(new Color(myFirstNum, mySecondNum, myThirdNum));
+                graphics.drawRect(paraX, paraY, widht, height);
+
+
         }
 
     }
