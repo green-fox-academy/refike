@@ -11,7 +11,7 @@ public class Reverse {
     public static String reverse (String string){
         String  reversedString ="";
         for (int i=0; i<string.length(); i++) {
-           reversedString = reversedString + string.charAt(string.length()- i ) ;
+           reversedString +=    string.charAt(string.length()- 1- i ) ;
 
         }
         return reversedString;

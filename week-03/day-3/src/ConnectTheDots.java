@@ -21,7 +21,8 @@ public class ConnectTheDots {
 
         hello(graphics,box);
         hello(graphics,box2);
-            }
+
+    }
 
 
 
@@ -29,12 +30,13 @@ public class ConnectTheDots {
         int[] xpoints = new int[myArray.length];
         int[] ypoints = new int[myArray.length];
         int npoints = myArray.length;
-        g.setColor(Color.GREEN);
+
         for (int i = 0; i < myArray.length; i++) {
             xpoints[i] = myArray[i][0];
             ypoints[i] = myArray[i][1];
 
         }
+        g.setColor(Color.GREEN);
         g.drawPolygon(xpoints, ypoints, npoints);
     }
 

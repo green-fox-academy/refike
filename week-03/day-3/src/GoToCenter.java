@@ -12,13 +12,11 @@ public class GoToCenter {
         // and draws a line from that point to the center of the canvas.
         // Draw 3 lines with that function. Use loop for that.
 
-        Scanner scanner = new Scanner(System.in);
 
         for (int i=0; i<3; i++) {
-            System.out.println("Give me two numbers");
-            int myFirstNum = scanner.nextInt();
-            int mySecondNum = scanner.nextInt();
-            graphics.drawLine(myFirstNum, mySecondNum, 160, 160);
+            int random1 = (int)(Math.random()*321);
+            int random2 = (int)(Math.random()*321);
+            graphics.drawLine(random1, random2, 160, 160);
 
 
         }

@@ -13,7 +13,7 @@ public class HorizontalLines {
 
         for (int i=0; i<3; i++) {
             int myFirstNum = (int)(Math.random()*(270)+1);
-            int mySecondNum = (int)(Math.random()*(320)+1);
+            int mySecondNum = (int)(Math.random()*(270)+1);
 
             graphics.drawLine(myFirstNum, mySecondNum, myFirstNum+50, mySecondNum);
 
