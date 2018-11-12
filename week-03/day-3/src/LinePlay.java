@@ -4,25 +4,26 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class CenterBoxFunction {
-
-    public static void mainDraw(Graphics graphics){
-        // create a square drawing function that takes 1 parameter:
-        // the square size
-        // and draws a square of that size to the center of the canvas.
-        // draw 3 squares with that function.
-        // avoid code duplication.
-
-        for (int i = 0; i <3 ; i++) {
-
-            int myFirstNum = (int)(Math.random()*(300)+1);
+public class LinePlay {
+    public static void mainDraw(Graphics graphics) {
 
 
-            graphics.drawRect((320 / 2) - (myFirstNum / 2), (320 / 2) - (myFirstNum / 2), myFirstNum, myFirstNum);
+        for (int i = 20; i < WIDTH ; i+=20) {
 
+            graphics.setColor(new Color(138, 43, 226));
+
+            graphics.drawLine(i, 0,HEIGHT,i);
+
+            graphics.setColor(Color.GREEN);
+
+            graphics.drawLine(0, i,i,WIDTH);
 
         }
+
+
     }
+
+
 
     // Don't touch the code below
     static int WIDTH = 320;

@@ -8,7 +8,7 @@ public class Unique {
 
         //  Example
 
-        System.out.println(unique(new int[] {8, 1,10, 8, 0, 1, 11, 8, 1, 22,8, 61,8}));
+        System.out.println(unique(new int[] {8, 1,10, 8, 0, 1, 11, 8, 1, 22,8, 61,8,}));
         //  should print: `[1, 11, 34, 52, 61]`
 
     }
@@ -31,7 +31,8 @@ public class Unique {
         int m = 0;                                          // m will be the index number in the newArray
         for (int i = 0; i <array.length ; i++){             //iterating through the given array to pick its element one by one
 
-            if (!itContains(newArray,array[i], m)){  //calling a method here - check below // in the condition we are checking if the given array's element is already in the newArray or not - but considering it only until the m index which is the fist element in the beginning
+            if (!itContains(newArray,array[i], m)){  //calling a method here - check below // in the condition we are checking if the given array's element is already in the newArray or not
+                                                    // - but considering it only until the m index which is the fist element in the beginning
                 newArray[m]= array[i];          // if the condition is true (so the newArray does NOT contain yet the given array's element) we set this value as the [0]index element of our newArray and so on
                 m++;                            // we incrementing the newArrays index - as the [0] index is taken already and so on
             }

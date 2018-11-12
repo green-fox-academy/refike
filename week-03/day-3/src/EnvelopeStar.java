@@ -4,25 +4,34 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class CenterBoxFunction {
+public class EnvelopeStar {
+    public static void mainDraw(Graphics graphics) {
 
-    public static void mainDraw(Graphics graphics){
-        // create a square drawing function that takes 1 parameter:
-        // the square size
-        // and draws a square of that size to the center of the canvas.
-        // draw 3 squares with that function.
-        // avoid code duplication.
+        for (int i = 20; i < WIDTH/2 ; i+=10) {
 
-        for (int i = 0; i <3 ; i++) {
+            graphics.setColor(Color.GREEN);
+            // --> fel
+            graphics.drawLine(i, HEIGHT/2,HEIGHT/2,HEIGHT/2+i);
 
-            int myFirstNum = (int)(Math.random()*(300)+1);
+            // fel <--
+            graphics.drawLine(HEIGHT- i, HEIGHT/2,HEIGHT/2,HEIGHT/2+i);
 
 
-            graphics.drawRect((320 / 2) - (myFirstNum / 2), (320 / 2) - (myFirstNum / 2), myFirstNum, myFirstNum);
+            // --> le
+            graphics.drawLine(i, HEIGHT/2,HEIGHT/2,HEIGHT/2-i);
+            // le <--
+            graphics.drawLine(HEIGHT-i, HEIGHT/2,HEIGHT/2,HEIGHT/2-i);
 
+            //graphics.setColor(Color.GREEN);
+
+           // graphics.drawLine(0, i,i,WIDTH);
 
         }
+
+
     }
+
+
 
     // Don't touch the code below
     static int WIDTH = 320;

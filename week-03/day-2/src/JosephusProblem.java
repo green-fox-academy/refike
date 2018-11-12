@@ -39,11 +39,11 @@ public class JosephusProblem {
 
             myList.add(0, myList.get(myList.size() - 1));
             myList.remove(myList.size() - 1);
+            }
         }
-    }
 
         System.out.println("The winning position is: " + winner);
-}
+    }
 }
 
 
