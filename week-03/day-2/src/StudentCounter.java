@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class StudentCounter {
@@ -44,6 +45,23 @@ public class StudentCounter {
         row5.put("candies", 2);
         map.add( row5 );
 
+        String  names = "";
+        double sumAge = 0.0;
+
+        for (int i = 0; i <map.size() ; i++) {
+            if ((Integer) map.get(i).get("candies") > 4) {
+                names += map.get(i).get("name") + " ";
+            }
+        }
+
+        for (int j = 0; j < map.size(); j++) {
+            if((Integer)map.get(j).get("candies") < 5){
+                sumAge += Double.valueOf(map.get(j).get("age").toString());
+            }
+        }
+
+        System.out.println(names);
+        System.out.println(sumAge);
         // Display the following things:
         //  - Who has got more candies than 4 candies
         //  - Sum the age of people who have lass than 5 candies

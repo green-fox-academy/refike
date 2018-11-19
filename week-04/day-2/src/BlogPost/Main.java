@@ -1,10 +1,6 @@
-public class BlogPost {
+package BlogPost;
 
-    String authorName;
-    String title;
-    String text;
-    String publicationDate;
-
+public class Main {
     public static void main(String[] args) {
         BlogPost first = new BlogPost();
         first.authorName = "John Doe";
@@ -27,7 +23,12 @@ public class BlogPost {
                 "he told me that he wasn’t really into the whole organizer profile thing.";
         third.publicationDate = "2017.03.28";
 
-
-
+        Blog myBlog = new Blog();
+        myBlog.add(first);
+        myBlog.add(second);
+        myBlog.delete(1);
+        myBlog.update(0,third);
+        System.out.println(myBlog);
     }
+
 }

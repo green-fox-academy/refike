@@ -1,3 +1,5 @@
+package SharpieSet;
+
 public class Sharpie {
     String color;
     double width;
@@ -13,15 +15,10 @@ public class Sharpie {
     public void use(){
         inkAmount--;
     }
-}
 
-class main {
-    public static void main(String[] args) {
-
-
-        Sharpie myRedSharpie = new Sharpie("red", 0.5);
-        myRedSharpie.use();
-        System.out.println("InkAmount decrease, new amount " + myRedSharpie.inkAmount);
-
+    public void useALL(){
+        inkAmount = 0;
     }
 }
+
+

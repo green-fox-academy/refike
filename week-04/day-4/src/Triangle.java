@@ -2,12 +2,12 @@ import javax.swing.*;
 
 import java.awt.*;
 
-import static java.lang.StrictMath.sqrt;
+import static java.lang.Math.sqrt;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class Triangles {
-    public static void mainDraw(Graphics graphics) {
+public class Triangle {
 
+    public static void mainDraw(Graphics graphics) {
         int x = 50;
         int y = 600;
         double sidelength = 30.0;
@@ -30,10 +30,9 @@ public class Triangles {
 
         }
     }
-
-
-
-
+    // graphics.drawLine(x, y,x+halfSide, y+ height);// the top
+    // graphics.drawLine(x+halfSide, y+ height, x+halfSide-sideInt,y+ height);
+    //graphics.drawLine(x+halfSide-sideInt,y+ height, x,y); // right side
 
 
     // Don't touch the code below
@@ -58,4 +57,5 @@ public class Triangles {
             mainDraw(graphics);
         }
     }
+
 }
