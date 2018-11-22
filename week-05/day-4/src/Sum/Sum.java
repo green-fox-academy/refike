@@ -6,14 +6,11 @@ public class Sum {
 
     ArrayList<Integer> myArray;
 
-    public Sum(ArrayList<Integer> myArray) {
-        this.myArray = myArray;
-    }
 
-    public int sumOfElements () {
+    public int sumOfElements (ArrayList<Integer> mylist) {
         int summa = 0;
-        for (int i = 0; i <myArray.size() ; i++) {
-            summa += myArray.get(i);
+        for (int i = 0; i <mylist.size() ; i++) {
+            summa += mylist.get(i);
         }
 
         return summa;
