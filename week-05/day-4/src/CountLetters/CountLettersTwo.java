@@ -3,27 +3,20 @@ package CountLetters;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class CountLetters {
+public class CountLettersTwo {
 
     public HashMap myMethod(String myString) {
         HashMap<Character, Integer> myMap = new HashMap<>();
-        int counter = 0;
+
         char[] charWord1 = myString.toCharArray();
 
         for (int i = 0; i < charWord1.length; i++) {
-            for (int j = i; j < charWord1.length; j++) {
-                if (charWord1[i] == charWord1[j]) {
-                    counter++;
-                    myMap.put(charWord1[i], counter);
-
-                }
-
+            if (!myMap.containsKey(charWord1[i])) {
+                myMap.put(charWord1[i],1);
+            } else {
+                myMap.put(charWord1[i], myMap.get(charWord1[i])+1);
             }
-            counter = 0;
-
-
         }
         return myMap;
-
     }
 }

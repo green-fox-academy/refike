@@ -4,9 +4,10 @@ import java.awt.print.PageFormat;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
 import java.util.Arrays;
+import java.util.Comparator;
 
 
-public class Domino implements Printable {
+public class Domino implements Comparable<Domino> {
     private final int left;
     private final int right;
 
@@ -28,8 +29,13 @@ public class Domino implements Printable {
         return "[" + left + ", " + right + "]";
     }
 
+
     @Override
-    public int print(Graphics graphics, PageFormat pageFormat, int pageIndex) throws PrinterException {
-        return 0;
+    public int compareTo(Domino o) {
+        if (this.left == o.left) {
+            return this.right - o.right;
+
+        }
+        return this.left - o.left;
     }
 }
