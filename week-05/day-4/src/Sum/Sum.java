@@ -7,12 +7,17 @@ public class Sum {
     ArrayList<Integer> myArray;
 
 
-    public int sumOfElements (ArrayList<Integer> mylist) {
-        int summa = 0;
-        for (int i = 0; i <mylist.size() ; i++) {
-            summa += mylist.get(i);
-        }
+    public Integer sumOfElements(ArrayList<Integer> mylist) {
+        Integer summa = 0;
+        if (mylist.isEmpty()) {
+            return null;
+        } else {
 
-        return summa;
+            for (int i = 0; i < mylist.size(); i++) {
+                summa += mylist.get(i);
+            }
+
+            return summa;
+        }
     }
 }
