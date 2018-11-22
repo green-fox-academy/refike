@@ -1,4 +1,9 @@
-package FleetOfThings;
+package Todo;
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class FleetOfThings {
 
@@ -20,6 +25,7 @@ public class FleetOfThings {
         // 3. [x] Stand up
         // 4. [x] Eat lunch
 
+        fleet.sort();
         System.out.println(fleet);
     }
 }

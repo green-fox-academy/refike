@@ -10,8 +10,7 @@ public class Station {
     public void refill (Car car){
         gasAmount -= car.capacity-car.carGasAmount;
 
-
-            car.carGasAmount+= car.capacity-car.carGasAmount;
+        car.carGasAmount+= car.capacity-car.carGasAmount;
     }
 }
 

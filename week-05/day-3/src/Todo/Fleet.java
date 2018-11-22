@@ -1,6 +1,8 @@
-package FleetOfThings;
+package Todo;
+
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by aze on 2017.03.29..
@@ -23,5 +25,9 @@ public class Fleet {
             result += (i+1) + ". " + things.get(i) + "\n";
         }
         return result;
+    }
+
+    public void sort() {
+        Collections.sort(things);
     }
 }
