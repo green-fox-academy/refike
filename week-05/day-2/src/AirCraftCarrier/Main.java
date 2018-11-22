@@ -19,13 +19,17 @@ public class Main {
         myCarrier.fill();
         myCarrier.status();
 
+        Planes one = new F16("F16");
+        Planes two = new F16("F16");
+        Planes three = new F35("F35");
+        Planes four = new F35("F35");
         Carrier mySecondCarrier = new Carrier();
-        mySecondCarrier.addPlane(first);
-        mySecondCarrier.addPlane(second);
-        mySecondCarrier.addPlane(third);
-        mySecondCarrier.addPlane(fourth);
+        mySecondCarrier.addPlane(one);
+        mySecondCarrier.addPlane(two);
+        mySecondCarrier.addPlane(three);
+        mySecondCarrier.addPlane(four);
         mySecondCarrier.fill();
-        myCarrier.status();
+        mySecondCarrier.status();
 
 
         myCarrier.fight(mySecondCarrier);
