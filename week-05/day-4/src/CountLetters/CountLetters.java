@@ -11,16 +11,16 @@ public class CountLetters {
         char[] charWord1 = myString.toCharArray();
 
         for (int i = 0; i < charWord1.length; i++) {
-            for (int j = i; j < charWord1.length; j++) {
+            for (int j = 0; j < charWord1.length; j++) {
                 if (charWord1[i] == charWord1[j]) {
                     counter++;
-                    myMap.put(charWord1[i], counter);
 
                 }
 
+                myMap.put(charWord1[i], counter);
+
             }
             counter = 0;
-
 
         }
         return myMap;
