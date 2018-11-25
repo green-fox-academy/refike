@@ -15,9 +15,7 @@ public class Plants {
     }
 
     public boolean needWater(){
-
         return (currentWaterAmount < minWater);
-
     }
 
     public void water(int amount) {

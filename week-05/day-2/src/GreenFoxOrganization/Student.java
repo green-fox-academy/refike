@@ -1,8 +1,8 @@
 package GreenFoxOrganization;
 
 public class Student extends Person {
-    String previousOrganization;
-    int skippedDays;
+    private String previousOrganization;
+    private int skippedDays;
 
     public Student (){
         super("Jane Doe", 30, "female");
@@ -21,13 +21,11 @@ public class Student extends Person {
     }
 
     public void introduce () {
-        System.out.println("Hi, I'm" +  name + ", a " + age + " year old " + gender +
+        System.out.println("Hi, I'm " +  name + ", a " + age + " year old " + gender +
                 " from " + previousOrganization + " who skipped " + skippedDays + " days from the course already.");
     }
 
     public void skipDays (int numberOfDays) {
         skippedDays+=numberOfDays;
     }
-
-
 }

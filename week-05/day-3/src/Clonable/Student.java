@@ -1,11 +1,8 @@
 package Clonable;
 
 public class Student extends Person implements Cloneable{
-    String previousOrganization;
-    int skippedDays;
-
-
-
+    private String previousOrganization;
+    private int skippedDays;
 
     public Student (){
         super("Jane Doe", 30, "female");
@@ -36,6 +33,5 @@ public class Student extends Person implements Cloneable{
     public void skipDays (int numberOfDays) {
         skippedDays+=numberOfDays;
     }
-
 
 }

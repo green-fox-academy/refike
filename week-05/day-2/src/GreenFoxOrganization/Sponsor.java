@@ -1,19 +1,19 @@
 package GreenFoxOrganization;
 
 public class Sponsor extends Person {
-    String company;
-    int hiredStudents;
-
-    public Sponsor(String name, int age, String gender, String company) {
-        super(name, age, gender);
-        this.company = company;
-        this.hiredStudents =0;
-    }
+    private String company;
+    private int hiredStudents;
 
     public Sponsor () {
         super("Jane Doe", 30, "female");
         this.company = "Google";
         this.hiredStudents= 0;
+    }
+
+    public Sponsor(String name, int age, String gender, String company) {
+        super(name, age, gender);
+        this.company = company;
+        this.hiredStudents =0;
     }
 
     public void introduce () {

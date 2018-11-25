@@ -6,20 +6,12 @@ public class Carrier {
     private ArrayList<Planes> planes;
     private int ammoStore;
     private int healthPoint;
-    private int maxDMG;
 
     public Carrier() {
         this.planes = new ArrayList<Planes>();
         this.ammoStore = 5000;
         this.healthPoint = 10000;
     }
-//
-//    public void setMaxDMG(int maxDMG) {
-//        for (int i = 0; i <planes.size() ; i++) {
-//            planes.get(i).getDamage();
-//        }
-//        this.maxDMG = maxDMG;
-//    }
 
     private int setMaxDMG() {
         int maxDMG=0;
@@ -28,8 +20,6 @@ public class Carrier {
         }
         return maxDMG;
     }
-
-
 
     public void addPlane(Planes plane) {
         planes.add(plane);
@@ -43,16 +33,18 @@ public class Carrier {
         return ammoCounter;
     }
 
-    private void refill() {
+    private void refill() {                             // segéd method a fill()-hez
         for (int i = 0; i < planes.size(); i++) {
             ammoStore = planes.get(i).refill(ammoStore);
         }
     }
-    public void fill() {
-        if (ammoStore > counter()){
+    public void fill()throws Exception {
+       if (ammoStore <= 0) {
+           throw  new Exception("No ammo left sorry bro...");
+       }
+       if (ammoStore > counter()){
             refill();
-        }
-        else {
+       } else {
             for (int i = 0; i < planes.size(); i++) {
                 if (planes.get(i).isPriority()) {
                     ammoStore = planes.get(i).refill(ammoStore);
@@ -60,10 +52,6 @@ public class Carrier {
             }
             refill();
         }
-    }
-
-    public int getHealthPoint() {
-        return healthPoint;
     }
 
     public void fight (Carrier carrier) {
@@ -75,8 +63,8 @@ public class Carrier {
     }
 
     public void status() {
-        System.out.println("HP: " + healthPoint + " Planes count: " + planes.size()+ " Ammo storage: "+ ammoStore
-                + " Total dmg: " + setMaxDMG());
+        System.out.println("HP: " + healthPoint + ", Planes count: " + planes.size()+ ", Ammo storage: " + ammoStore
+                + ", Total dmg: " + setMaxDMG());
         for (int i = 0; i < planes.size(); i++) {
             System.out.println(planes.get(i).getStatus()); // azért kel a sout mert csak returnölök egy Stringet ami az adot gép statusa
         }

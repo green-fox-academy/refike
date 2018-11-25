@@ -21,8 +21,6 @@ public class Planes {
         return damage;
     }
 
-
-
     public void setAmmoStore(int ammoStore) {
         this.ammoStore = ammoStore;
     }
@@ -57,6 +55,4 @@ public class Planes {
     public boolean isPriority() {
         return priority;
     }
-
-
 }

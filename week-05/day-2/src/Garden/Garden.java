@@ -13,7 +13,7 @@ public class Garden {
         plants.add(plant);
     }
 
-    public int counter(){
+    private int counter(){
         int counter = 0;
         for (int i = 0; i <plants.size() ; i++) {
           if(plants.get(i).needWater()){
@@ -23,7 +23,7 @@ public class Garden {
         return counter;
     }
 
-    public void watering (int amountOfWater){
+    public void watering(int amountOfWater){
         int counter = counter();
         for (int i = 0; i <plants.size(); i++) {
             plants.get(i).water(amountOfWater/counter);
@@ -31,9 +31,9 @@ public class Garden {
     }
 
     public void status() {
-        for (int i = 0; i < plants.size(); i++) {
+        for (int i = 0; i < plants.size(); i++){
             if (plants.get(i).needWater()) {
-                System.out.println(plants.get(i).getColor() + " need water");
+                System.out.println(plants.get(i).getColor() + " needs water");
             } else {
                 System.out.println(plants.get(i).getColor() + " doesn't need water");
             }
