@@ -13,7 +13,6 @@ public class Dominoes {
         Collections.sort(dominoes);
         System.out.println(dominoes);
     }
-
     static List<Domino> initializeDominoes() {
         List<Domino> dominoes = new ArrayList<>();
         dominoes.add(new Domino(5, 2));

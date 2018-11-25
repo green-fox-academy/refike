@@ -1,10 +1,6 @@
 package Todo;
-
 import java.util.Comparator;
 
-/**
- * Created by aze on 2017.03.29..
- */
 public class Thing implements Comparable<Thing>{
     private String name;
     private boolean completed;

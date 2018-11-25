@@ -7,7 +7,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 
-public class Domino implements Comparable<Domino> {
+
+public class Domino implements Comparable<Domino>  {
     private final int left;
     private final int right;
 
@@ -29,13 +30,13 @@ public class Domino implements Comparable<Domino> {
         return "[" + left + ", " + right + "]";
     }
 
-
     @Override
     public int compareTo(Domino o) {
         if (this.left == o.left) {
             return this.right - o.right;
-
         }
         return this.left - o.left;
     }
+
 }
+
