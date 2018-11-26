@@ -11,7 +11,15 @@ class AnagramTest {
     @Test
     void testIsAnagram() {
         String a = "apple";
-        String b = "p aple";
+        String b = "paple";
+
+        assertTrue(anagram.isAnagram(a,b));
+    }
+
+    @Test
+    void testIsAnagramWithSpace() {
+        String a = "apple";
+        String b = "p a p l e";
 
         assertTrue(anagram.isAnagram(a,b));
     }

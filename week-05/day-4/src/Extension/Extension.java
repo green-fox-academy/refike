@@ -4,11 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by aze on 2017.04.04..
- */
 public class Extension {
-
 
     int add(int a, int b) {
         int sum = a+b;
@@ -32,6 +28,7 @@ public class Extension {
     }
 
     boolean isVowel(char c) {
+
         return Arrays.asList('a', 'u', 'o', 'e', 'i').contains(c);
     }
 

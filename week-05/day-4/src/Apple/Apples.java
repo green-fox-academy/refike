@@ -1,14 +1,13 @@
 package Apple;
 
 public class Apples {
-    private String string;
+    private String myString;
 
     public Apples(String string) {
-        this.string = string;
+        this.myString = string;
     }
 
     public String getApple () {
-        System.out.println(string);
-        return string;
+        return myString;
     }
 }

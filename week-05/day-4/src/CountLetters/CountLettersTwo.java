@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class CountLettersTwo {
 
-    public HashMap myMethod(String myString) {
+    public HashMap countLetters(String myString) {
         HashMap<Character, Integer> myMap = new HashMap<>();
 
         char[] charWord1 = myString.toCharArray();

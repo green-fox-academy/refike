@@ -9,15 +9,13 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SumTest {
-    ArrayList<Integer> myList;
+    private ArrayList<Integer> myList;
     Sum sum = new Sum();
 
     @BeforeEach
-    void setUP()
-    {
+    void setUP() {
         myList = new ArrayList<Integer>();
     }
-
     @Test
     void testSumOfElements() {
         myList.add(1);
@@ -30,15 +28,21 @@ class SumTest {
         assertEquals(expected, sum.sumOfElements(myList));
     }
     @Test
+    void testSumOneElement() {
+        myList.add(3);
+        Integer expected = 3;
+        assertEquals(expected, sum.sumOfElements(myList));
+
+    }
+    @Test
     void testSumZeroValueElements() {
+        myList.add(0);
         myList.add(0);
         Integer expected = 0;
         assertEquals(expected, sum.sumOfElements(myList));
     }
-
-        @Test
+    @Test
     void testNullElements() {
-
         assertNull(sum.sumOfElements(myList));
     }
 }

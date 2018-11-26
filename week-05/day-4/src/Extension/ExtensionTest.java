@@ -7,9 +7,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Created by aze on 2017.04.04..
- */
+
 class ExtensionTest {
 
     Extension extension = new Extension();
@@ -41,7 +39,7 @@ class ExtensionTest {
 
     @Test
     void testMedian_five() {
-        assertEquals(3, extension.median(Arrays.asList(1,2,3,4,5)));
+        assertEquals(4, extension.median(Arrays.asList(1,4,9,7,3)));
     }
 
     @Test
@@ -56,7 +54,7 @@ class ExtensionTest {
 
     @Test
     void testTranslate_bemutatkozik() {
-        assertEquals("beveevemuvutavatkovozivik", extension.translate("beemutatkozik"));
+        assertEquals("bevemuvutavatkovozivik", extension.translate("bemutatkozik"));
     }
 
     @Test
