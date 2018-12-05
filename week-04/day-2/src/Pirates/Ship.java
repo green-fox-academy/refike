@@ -15,7 +15,7 @@ public class Ship {
         staff.add(new Pirate(true));
         staff.get(0).drinkSomeRum();
 
-        int crewNumber = (int) (Math.random() * ((100-25) + 1)+25);
+        int crewNumber = (int) (Math.random() * ((100 - 25) + 1) + 25);
         for (int i = 0; i < crewNumber; i++) {
             staff.add(new Pirate(false));
         }
@@ -31,7 +31,7 @@ public class Ship {
         return counter;
     }
 
-    public  void weWIN(Ship givenShip) {
+    private void weWIN(Ship givenShip) {
         int randomDeaths = (int) (Math.random() * (givenShip.staff.size()) + 1);
         for (int i = 1; i < randomDeaths; i++) {
             givenShip.staff.get(i).die();
@@ -43,7 +43,7 @@ public class Ship {
         System.out.println("My ship won");
     }
 
-    public void enemyWIN (Ship anotherShip) {
+    private void enemyWIN(Ship anotherShip) {
         int randomDeaths = (int) (Math.random() * (staff.size()) + 1);
         for (int i = 1; i < randomDeaths; i++) {
             staff.get(i).die();
@@ -67,7 +67,7 @@ public class Ship {
         } else {
             enemyWIN(anotherShip);
             return false;
-         }
+        }
     }
 }
 

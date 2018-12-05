@@ -11,13 +11,15 @@ public class FourRectangles {
         // avoid code duplication.
         for (int i = 0; i <4 ; i++) {
 
-            int myFirstNum = (int)(Math.random()*(249)+1);
-            int mySecondNum = (int)(Math.random()*(249)+1);
-            int myThirdNum = (int)(Math.random()*(249)+1);
-            int paraX = (int)(Math.random()*(300)+1);
-            int paraY = (int)(Math.random()*(300)+1);
-            int widht = (int)(Math.random()*((300-paraX)-10)+1)+10;
-            int height = (int)(Math.random()*((300-paraY)-10)+1)+10;
+            int number1 = 249;
+            int number2 = 300;
+            int myFirstNum = (int)(Math.random()*(number1)+1);
+            int mySecondNum = (int)(Math.random()*(number1)+1);
+            int myThirdNum = (int)(Math.random()*(number1)+1);
+            int paraX = (int)(Math.random()*(number2)+1);
+            int paraY = (int)(Math.random()*(number2)+1);
+            int widht = (int)(Math.random()*((number2-paraX)-10)+1)+10;
+            int height = (int)(Math.random()*((number2-paraY)-10)+1)+10;
 
 
                 graphics.setColor(new Color(myFirstNum, mySecondNum, myThirdNum));

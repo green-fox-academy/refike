@@ -10,11 +10,11 @@ public class CountLettersTwo {
 
         char[] charWord1 = myString.toCharArray();
 
-        for (int i = 0; i < charWord1.length; i++) {
-            if (!myMap.containsKey(charWord1[i])) {
-                myMap.put(charWord1[i],1);
+        for (char aCharWord1 : charWord1) {
+            if (!myMap.containsKey(aCharWord1)) {
+                myMap.put(aCharWord1, 1);
             } else {
-                myMap.put(charWord1[i], myMap.get(charWord1[i])+1);
+                myMap.put(aCharWord1, myMap.get(aCharWord1) + 1);
             }
         }
         return myMap;

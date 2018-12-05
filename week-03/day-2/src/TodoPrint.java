@@ -12,10 +12,10 @@ public class TodoPrint {
         //  - Download games
         //      - Diablo
 
-        StringBuilder todoText1 = new StringBuilder("\n - Buy milk\n");
+        StringBuilder todoText1 = new StringBuilder("\n - Buy milk");
         String addMy = "My todo: ";
         todoText1.insert(0, addMy);
-        todoText1.insert(todoText1.length(), " - Download games");
+        todoText1.insert(todoText1.length(), "\n - Download games");
         todoText1.insert(todoText1.length(), "\n \t - Diablo");
 
         System.out.println(todoText1);

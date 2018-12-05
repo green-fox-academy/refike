@@ -24,10 +24,9 @@ public class Doubled {
     public static String duplicated(List <String> myList) {
         String quote = "";
 
-        for (int i = 0; i <myList.size() ; i++) {
-           String line = myList.get(i);
-            for (int j = 0; j <line.length() ; j+=2) {
-            quote += line.charAt(j);
+        for (String line : myList) {
+            for (int j = 0; j < line.length(); j += 2) {
+                quote += line.charAt(j);
 
             }
         }

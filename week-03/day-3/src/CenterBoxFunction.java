@@ -18,7 +18,7 @@ public class CenterBoxFunction {
             int myFirstNum = (int)(Math.random()*(300)+1);
 
 
-            graphics.drawRect((320 / 2) - (myFirstNum / 2), (320 / 2) - (myFirstNum / 2), myFirstNum, myFirstNum);
+            graphics.drawRect((WIDTH / 2) - (myFirstNum / 2), (HEIGHT / 2) - (myFirstNum / 2), myFirstNum, myFirstNum);
 
 
         }

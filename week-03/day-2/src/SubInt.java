@@ -20,9 +20,8 @@ public class SubInt {
       ArrayList<String> splitArray = new ArrayList<>();
         for (int number : numbers) {
             splitArray.add("" + number);
+        }
 
-
-            }
         String digit = Integer.toString(a);
         ArrayList<Integer> indexes = new ArrayList<>();
         for (int i = 0; i < splitArray.size(); i++) {

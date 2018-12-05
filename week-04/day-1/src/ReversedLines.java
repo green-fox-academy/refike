@@ -18,10 +18,9 @@ public class ReversedLines {
 
     public static String reversedLines(List <String> myList) {
         String sentence = "";
-        for (int i = 0; i <myList.size() ; i++) {
-           String lines = myList.get(i);
-            for (int j = 0; j <lines.length() ; j++) {
-                sentence += lines.charAt(lines.length()-1-j);
+        for (String lines : myList) {
+            for (int j = 0; j < lines.length(); j++) {
+                sentence += lines.charAt(lines.length() - 1 - j);
             }
 
         }

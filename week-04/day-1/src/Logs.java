@@ -34,7 +34,7 @@ public class Logs {
 
     public static ArrayList<String> uniqueIP ( ArrayList <String> myIPS){
         for (int i = 0; i < myIPS.size()-1; i++) {
-            for (int j = i+1 ; j < myIPS.size()-1; j++) {
+            for (int j = i+1 ; j < myIPS.size(); j++) {
                 if (myIPS.get(i).equals(myIPS.get(j))) {
                     myIPS.remove(j);
                 }

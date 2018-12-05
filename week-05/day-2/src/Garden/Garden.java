@@ -15,27 +15,27 @@ public class Garden {
 
     private int counter(){
         int counter = 0;
-        for (int i = 0; i <plants.size() ; i++) {
-          if(plants.get(i).needWater()){
-              counter++;
-          }
+        for (Plants plant : plants) {
+            if (plant.needWater()) {
+                counter++;
+            }
         }
         return counter;
     }
 
     public void watering(int amountOfWater){
         int counter = counter();
-        for (int i = 0; i <plants.size(); i++) {
-            plants.get(i).water(amountOfWater/counter);
+        for (Plants plant : plants) {
+            plant.water(amountOfWater / counter);
         }
     }
 
     public void status() {
-        for (int i = 0; i < plants.size(); i++){
-            if (plants.get(i).needWater()) {
-                System.out.println(plants.get(i).getColor() + " needs water");
+        for (Plants plant : plants) {
+            if (plant.needWater()) {
+                System.out.println(plant.getColor() + " needs water");
             } else {
-                System.out.println(plants.get(i).getColor() + " doesn't need water");
+                System.out.println(plant.getColor() + " doesn't need water");
             }
         }
     }

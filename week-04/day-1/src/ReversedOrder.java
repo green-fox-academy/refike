@@ -24,10 +24,9 @@ public class ReversedOrder {
 
     public static String reversedOrder (List<String> mylist){
         String sentence = "";
-        for (int i = 0; i <mylist.size() ; i++) {
-            String lines = mylist.get(i);
-            for (int j = 0; j <lines.length() ; j++) {
-                sentence += lines.charAt(lines.length()-1-j);
+        for (String lines : mylist) {
+            for (int j = 0; j < lines.length(); j++) {
+                sentence += lines.charAt(lines.length() - 1 - j);
             }
 
         }

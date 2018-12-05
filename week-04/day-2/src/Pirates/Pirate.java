@@ -5,14 +5,13 @@ public class Pirate {
     boolean isAlive;
     boolean isCaptain;
 
-
-    public Pirate (boolean isCaptain){
+    public Pirate(boolean isCaptain) {
         this.isCaptain = isCaptain;
         this.intoxicateLvL = 0;
         this.isAlive = true;
     }
 
-    public int captainRumLvl () {
+    public int captainRumLvl() {
         if (isAlive) {
             if (isCaptain) {
                 if (intoxicateLvL >= 5) {
@@ -27,17 +26,15 @@ public class Pirate {
 
     public void drinkSomeRum() {
         if (isAlive) {
-            int randomRum = (int)(Math.random()*((5-1)+1)+1);
+            int randomRum = (int) (Math.random() * ((5 - 1) + 1) + 1);
             intoxicateLvL = randomRum;
-        }
-        else {
+        } else {
             System.out.println("He is dead");
         }
     }
 
 
-
-    public void howItsGoingMate () {
+    public void howItsGoingMate() {
         if (isAlive) {
             if (intoxicateLvL >= 0 && intoxicateLvL < 5) {
                 System.out.println("Pour me anudder!");
@@ -57,14 +54,13 @@ public class Pirate {
         isAlive = false;
     }
 
-    public void brawl (Pirate anOtherPirate) {
+    public void brawl(Pirate anOtherPirate) {
         if (isAlive && anOtherPirate.isAlive) {
             int number = (int) (Math.random() * (3) + 1);
             if (number == 1) {
                 die();
                 System.out.println("My pirate died ");
-            }
-            else if (number == 2) {
+            } else if (number == 2) {
                 anOtherPirate.die();
                 System.out.println("My pirate was better, and the other one is dead, HAHAHAHA");
             } else {

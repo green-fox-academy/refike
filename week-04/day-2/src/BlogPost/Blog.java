@@ -21,7 +21,7 @@ public class Blog {
 
     }
 
-    public void update (int indexnumber, BlogPost blogPost) {
+    public void update (int indexnumber, BlogPost blogPost)  {
         myBlog.set(indexnumber,blogPost);
     }
 
