@@ -1,0 +1,50 @@
+body {
+    background: lightblue;
+}
+
+table {
+    margin-top: 40px;
+    font-family: 'Arial';
+    border-collapse: collapse;
+    border-style: hidden;
+    line-height: 80px;
+    width: 80%;
+    font-size: 25px;
+    text-align: left; 
+    color: darkmagenta;
+    
+    box-shadow: 
+     0px 0px 20px rgba(0,0,0,0.05),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 10px 20px rgba(0,0,0,0.05),
+     0px 10px 20px rgba(0,0,0,0.05);   
+}
+
+td {
+    padding-left: 15px;
+    border: 2px solid whitesmoke;      
+}
+
+th{
+    padding-left: 15px;
+    background: black;
+border-bottom: 4px solid whitesmoke;   
+    
+}
+
+tr:nth-child(2n+1) {
+    background: lightgray;
+}
+
+tr:nth-child(2n+2) {
+    background: darkgrey;
+}
+
+th:first-child {
+border-radius: 10px 0 0 0;
+    border-right: 2px solid darkgray;
+}
+
+th:last-child {
+   border-radius:  0 10px 0 0;
+}

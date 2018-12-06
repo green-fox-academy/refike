@@ -1,0 +1,64 @@
+body{
+    background: lightgray;
+    margin-top: 200px;
+    font-family: arial;
+}
+
+#login{
+    font-size: 30px;
+}
+
+#pass{
+    font-size: 10px;
+    text-align: right;
+}
+
+form {
+    background: whitesmoke;
+  margin: 0 auto;
+  width: 500px;
+  padding: 20px;
+    border-radius: 5px;
+}
+
+label{
+ font-size: 12px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid green;
+}
+input[type=text]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;  
+}
+
+input[type=password] {
+        display: block;
+    width: 100%;
+    margin-top: 10px;
+        box-sizing: border-box;
+    background-color:  white;
+    background-image:  url(szemecske.png);
+    background-repeat: no-repeat;
+    background-position: right;
+        margin-bottom: 10px;
+    padding: 10px;
+        border-radius: 5px;
+}
+
+input[type=submit]{
+    
+    border: 0px;
+    background: black;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+}

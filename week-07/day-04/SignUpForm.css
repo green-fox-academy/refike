@@ -1,0 +1,107 @@
+body{
+    background: whitesmoke;
+    margin-top: 200px;
+    font-family: arial;
+}
+
+.mydiv{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+
+form {
+    background: white;
+  margin: 0 auto;
+  width: 700px;
+  padding: 25px;
+    border-radius: 5px;
+}
+
+
+.or {
+    
+    background: lightgray;
+    border-radius: 30px;
+          margin: 0 auto;
+
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     box-shadow: 
+     0px 0px 15px rgba(0,0,0,0.05),
+     0px 5px 15px rgba(0,0,0,0.05),
+     0px 5px 15px rgba(0,0,0,0.05),
+     0px 5px 15px rgba(0,0,0,0.05); 
+}
+
+#login{
+    font-size: 25px;
+}
+
+input{
+    border: 0;
+    border-bottom: 1px solid lightgray;
+
+}
+
+input[type=text]{
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    padding: 10px;
+    
+}
+input[type=email]{
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px;    
+}
+input[type=password]{
+    width: 80%;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding: 10px;  
+}
+input[type=submit]{
+        width: 50%;
+        box-sizing: border-box;
+      margin-top: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    background: green;
+    color: white;
+}
+input.fb {
+    width: 80%;
+    background: #3b5998;
+    margin-top: 20px;
+    margin-left: 40px;     
+}
+
+input.twitter {
+    width: 80%;
+    background: #5b99ff;
+        margin-top: 20px;
+        margin-left: 40px; 
+}
+
+input.google {
+   width: 80%;
+    background: #db4437;
+        margin-top: 20px;
+        margin-left: 40px;      
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid green;
+}
+

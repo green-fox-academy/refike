@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="keywords" content="NewsLetter">
+    <meta charset="utf-8" />
+    <title>NewsLetter webpage</title>
+</head>
+<body>  
+    <form action="https://newsletter-ws.herokuapp.com/signup" method="post">
+        <div>
+        <label for="name">USERNAME</label>
+        <input type="text" id="name" name="user_name" placeholder="name" required pattern="[A-Za-z0-9]+">
+        </div>
+        <div>
+        <label for="mail">EMAIL</label>
+        <input type="email" id="mail" name="user_mail" placeholder="email" required>
+        </div>
+         <input type="submit" value="Login"> 
+</form>
+</body>    
+</html>
