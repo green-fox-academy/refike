@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="loginForm.css">
 </head>
 <body>  
-    <form action="https://newsletter-ws.herokuapp.com/signup" method="post">
+    <form autocomplate="off">
      <p id="login">ACCOUNT LOGIN</p>  
         <div>
         <label for="name">USERNAME</label>
-        <input type="text" id="name" name="user_name">
+        <input type="text" id="name" name="user_name" autofocus required pattern=".{5,}" title="Five or more characters"/>
       </div>
       <div>
         <label for="mail">PASSWORD</label>
-        <input type="password" id="password" name="user_password">
+        <input type="password" id="password" name="user_password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" />
       </div>
         <p id="pass">Forget Password?</p>   
     <input type="submit" value="Login"> 

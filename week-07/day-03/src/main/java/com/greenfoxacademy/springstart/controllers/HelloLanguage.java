@@ -22,12 +22,12 @@ public class HelloLanguage {
 
     public String getColor() {
         int nextInt = random.nextInt(0xffffff + 1);
-        color = String.format("#%06x",nextInt);
-        return color;
+        return color = String.format("#%06x",nextInt);
+
     }
 
     public int getSize() {
-        size = random.nextInt(36)+10;
-        return size;
+        return size = random.nextInt(36)+10;
+
     }
 }

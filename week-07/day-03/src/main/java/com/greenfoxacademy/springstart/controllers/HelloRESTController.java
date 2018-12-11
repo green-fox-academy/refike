@@ -10,9 +10,8 @@ import java.util.concurrent.atomic.AtomicLong;
 @RestController
 public class HelloRESTController {
 
-    @RequestMapping
+    @RequestMapping (value="/greeting")
     public Greeting greeting(@RequestParam String name) {
-        Greeting greet = new Greeting(name);
-        return greet;
+        return new Greeting("Hello, " + name);
     }
 }

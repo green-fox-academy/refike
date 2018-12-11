@@ -9,9 +9,10 @@
 <body>
   
 <form action="https://newsletter-ws.herokuapp.com/register" method="post">
-    <div class="mydiv">
-      <div>
-         <p id="login">Sign Up</p>  
+    <div class="maindiv">
+      
+        <div> 
+          <p id="login">Sign Up</p>  
 
         <input type="text" id="name" name="user_name" placeholder="Username" pattern="[A-Za-z0-9]+"><br>
 
@@ -20,20 +21,19 @@
         <input type="password" id="password" name="user_password" placeholder="Password"><br>
 
         <input type="password" id="password" name="user_password" placeholder="Retype Password"><br>
-        <input type="submit" value="SIGN ME UP"> 
-
+        <input type="submit" class="signup" value="SIGN ME UP"> 
       </div>
     
       <div class="or">
         <p>Or</p>
       </div>
-     <div class="helper">
-    
+     
+        <div class="helper">
     <input type="submit" class="fb" value="Log in with Facebook" ><br>    
     <input type="submit" class="twitter" value="Log in with Twitter"><br>
     <input type="submit" class="google" value="Log in with google+">
+        </div>
     
-     </div>
     </div>
     
 </form>

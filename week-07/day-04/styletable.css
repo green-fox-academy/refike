@@ -1,9 +1,12 @@
-body {
+.try {
     background: lightblue;
+    width: 100%;
+    height: 800px;
+    padding-top: 10%;
+    margin: 10px;
 }
 
 table {
-    margin-top: 40px;
     font-family: 'Arial';
     border-collapse: collapse;
     border-style: hidden;

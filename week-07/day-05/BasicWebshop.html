@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="keywords" content="WebShop">
+    <meta charset="utf-8"/>
+    <title>Daniel's Webshop</title>
+    <link rel="stylesheet" type="text/css" href="Webshop.css">
+
+
+</head>
+
+<body>
+<div class="first">
+    <header>
+        <h1>Daniel's webshop</h1>
+    </header>
+
+    <nav>
+
+        <button type="button" class="button1" onclick="location.href='/only-available'">Only available</button>
+        <button type="button" class="button2" onclick="location.href='/only-available'">Cheapest first</button>
+        <button type="button" class="button3" onclick="location.href='/only-available'">Contains Nike</button>
+        <button type="button" class="button4" onclick="location.href='/only-available'">Average Stock</button>
+        <button type="button" class="button6" onclick="location.href='/only-available'">Most expensieve available
+        </button>
+
+    </nav>
+</div>
+    <div>
+    <table>
+        <thead>
+        <tr class="menu">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity of stock</th>
+            
+            </tr>
+        
+        </thead>
+        
+        <tbody>
+        <tr th:each="item : ${items}">
+  <td th:text=$(item.getName())></td>
+  
+
+        
+        </tbody>
+        
+        
+        </table>
+    
+    </div>
+
+
+</body>
+</html>

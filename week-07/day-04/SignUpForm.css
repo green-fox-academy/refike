@@ -4,21 +4,16 @@ body{
     font-family: arial;
 }
 
-.mydiv{
+.maindiv{
     display:grid;
     grid-template-columns: auto auto auto;
     align-items: center;
-}
-
-
-form {
-    background: white;
+   background: white;
   margin: 0 auto;
   width: 700px;
   padding: 25px;
     border-radius: 5px;
 }
-
 
 .or {
     
@@ -28,7 +23,6 @@ form {
 
     width: 60px;
     height: 60px;
-    vertical-align: middle;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,63 +35,51 @@ form {
 
 #login{
     font-size: 25px;
+    margin-bottom: 20px;
 }
 
 input{
     border: 0;
     border-bottom: 1px solid lightgray;
-
-}
-
-input[type=text]{
-    width: 80%;
-    box-sizing: border-box;
-    margin-top: 5px;
-    padding: 10px;
-    
-}
-input[type=email]{
     width: 80%;
     box-sizing: border-box;
     margin-top: 10px;
-    padding: 10px;    
-}
-input[type=password]{
-    width: 80%;
-    box-sizing: border-box;
-    margin-top: 10px;
-    padding: 10px;  
-}
-input[type=submit]{
-        width: 50%;
-        box-sizing: border-box;
-      margin-top: 40px;
     padding: 10px;
+    color: white;
+
+}
+
+input.signup {
+    width: 50%;
+    margin-top: 40px;
     border-radius: 5px;
-    border: 0;
     font-size: 18px;
     background: green;
-    color: white;
 }
+
+.helper {
+    margin: 0 auto;
+}
+
 input.fb {
-    width: 80%;
+    font-size: 18px;
+    width: 100%;
     background: #3b5998;
     margin-top: 20px;
-    margin-left: 40px;     
 }
 
 input.twitter {
-    width: 80%;
+    font-size: 18px;
+    width: 100%;
     background: #5b99ff;
-        margin-top: 20px;
-        margin-left: 40px; 
+    margin-top: 20px;
 }
 
 input.google {
-   width: 80%;
+    font-size: 18px;
+    width: 100%;
     background: #db4437;
-        margin-top: 20px;
-        margin-left: 40px;      
+    margin-top: 20px;
 }
 
 input:focus{
