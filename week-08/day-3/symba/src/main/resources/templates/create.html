@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New Book</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+<div>
+    <form action="#" th:action="@{/account/add}" th:object="${acc}" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" th:field="*{name}" required>
+
+        <label for="balance">Balance</label>
+        <input type="number" name="balance" id="balance" th:field="*{balance}" required>
+
+        <label for="animaltype">Animal type</label>
+        <input type="text" name="animaltype" id="animaltype" th:field="*{animalType}" required>
+
+        <label for="isking">Animal status</label>
+        <input type="checkbox" name="king" id="isking" th:field="*{king}" th:value="true">
+
+        <button type="submit">Save</button>
+    </form>
+</div>
+
+</body>
+</html>
