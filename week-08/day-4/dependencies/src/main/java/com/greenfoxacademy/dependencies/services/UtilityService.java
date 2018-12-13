@@ -9,6 +9,9 @@ import java.util.Random;
 public class UtilityService {
     ArrayList<String> colors;
     Random random;
+     String email;
+    String first;
+    Integer myint;
 
     public UtilityService() {
         colors = new ArrayList<>();
@@ -26,5 +29,18 @@ public class UtilityService {
 
     public boolean validEmail (String string) {
         return (string.contains("@") && string.contains("."));
+    }
+
+    public String caesar(String text, int number) {
+        if (number < 0) {
+            number = 26 + number;
+        }
+
+        String result = "";
+        for(int i = 0; i < text.length(); i++) {
+            int offset = Character.isUpperCase(text.charAt(i)) ? 'A' : 'a';
+            result += (char)(((int)text.charAt(i) + number - offset) % 26 + offset);
+        }
+        return result;
     }
 }

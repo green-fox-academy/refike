@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Useful Utilities</title>
+</head>
+<body>
+<form th:method ="get" th:action="@{/useful/email}" >
+    <label for="email">Fill in your email </label>
+    <input id="email" name="email" th:text="${email}">
+    <button type="submit">submit</button>
+
+
+</form>
+
+<form th:method ="get" th:action="@{/useful/ceasar}" >
+
+    <label for="text">Fill in your text </label>
+    <input id="text" name="text" th:text="${text1}">
+    <label for="num">Fill in your int </label>
+    <input id="num" name="num" th:text="${int1}">
+    <button type="submit">submit</button>
+
+</form>
+
+</body>
+</html>
