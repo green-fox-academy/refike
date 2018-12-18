@@ -37,8 +37,8 @@ public class UsefulController {
         return "email";
     }
 
-    @GetMapping("/useful/ceasar")
-    public String validEmail(Model model, @RequestParam (name = "text") String text, @RequestParam (name ="num")Integer number) {
+    @PostMapping("/useful/ceasar")
+    public String validEmail(Model model, @ModelAttribute (name = "text") String text, @ModelAttribute (name ="num")Integer number) {
         model.addAttribute("ceasar", utilityService.caesar(text, number));
         return "ceasar";
 

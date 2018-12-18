@@ -33,11 +33,17 @@ public class BankAccountController {
         return "tempTwo";
     }
 
+
+
+
     @GetMapping("/account/add")
-    public String addAccountForm(Model model, @ModelAttribute(name="book") BankAccount account) {
+    public String addAccountForm(Model model, @ModelAttribute(name="acc") BankAccount account) {
         model.addAttribute("acc", account);
         return "create";
     }
+
+
+
 
     @PostMapping ("/account/add")
     public String addAccount(@ModelAttribute(name="acc") BankAccount account) {

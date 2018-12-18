@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition Store</title>
+</head>
+<body>
+
+<ul>
+    <li>Information</li>
+    <li>Nutrition Store</li>
+    <li>Trick Center</li>
+    <li>Action History</li>
+</ul>
+
+<form th:method ="post" th:action="@{/login}">
+    <label for="food">Food</label>
+    <input id="food" name="food1" autofocus >
+    <label for="drink">Drink</label>
+    <input id="drink" name="drink1"  >
+    <button type="submit">Change</button>
+</form>
+
+</body>
+</html>

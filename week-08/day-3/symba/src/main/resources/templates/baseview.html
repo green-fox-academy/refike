@@ -2,8 +2,8 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Thymeleaf Exercise #</title>
-    <link rel="stylesheet" th:href="@{/style.css}" />
-    <meta charset="utf-8" />
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <meta charset="utf-8"/>
 </head>
 <body>
 <table>
@@ -19,16 +19,20 @@
 
     <tbody>
 
-<tr th:style="${account.getKing()} ? 'background-color : red'" th:each = " account : ${accounts}"   >
+    <tr th:style="${account.getKing()} ? 'background-color : red'" th:each=" account : ${accounts}">
 
-    <td th:text="${accountStat.index}"></td>
-    <td th:text = "${account.name}" ></td>
-    <td th:text = "${#numbers.formatDecimal(account.balance,0,2) + ' Zeb'}"></td>
-    <td th:text = "${account.animalType}"></td>
-    <td th:text = "${account.getKing()}"></td>
+        <td th:text="${accountStat.index}"></td>
+        <td th:text="${account.name}"></td>
+        <td th:text="${#numbers.formatDecimal(account.balance,0,2) + ' Zeb'}"></td>
+        <td th:text="${account.animalType}"></td>
+        <td th:text="${account.getKing()}"></td>
 
-</tr>
+    </tr>
+
+
     </tbody>
 </table>
+
+<button onclick="location.href='http://localhost:8080/account/add'" type="button">Add new member</button>
 </body>
 </html>
