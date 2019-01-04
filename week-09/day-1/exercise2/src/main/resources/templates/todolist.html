@@ -6,9 +6,31 @@
 </head>
 <body>
 <h1>Todos for today:</h1>
-<ul>
-    <li th:each="todo : ${todos}" th:text="${todo.getTitle()}"></li>
-</ul>
+<p><a href="http://localhost:8080/todo/add">Add new todo</a></p>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>ACTION</th>
+        <th>DONE</th>
+        <th>URGENT</th>
+        <th>Date</th>
+        <th>Delete</th>
+        <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="todo : ${todos}">
+        <td th:text="${todo.getId()}"></td>
+        <td th:text="${todo.getTitle()}"></td>
+        <td th:text="${todo.getDone()}"></td>
+        <td th:text="${todo.getUrgent()}"></td>
+        <td th:text="${todo.getMydate()}"></td>
+        <td><a th:href="|${todo.getId()}/delete|">Delete</a></td>
+        <td><a th:href="|/todo/${todo.getId()}/edit|">Edit</a></td>
+    </tr>
+    </tbody>
+</table>
 
 </body>
 </html>

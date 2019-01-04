@@ -1,9 +1,10 @@
-package com.greenfoxacademy.listingtodos.model;
+package com.greenfoxacademy.exercisetwo.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class Todo {
@@ -14,6 +15,8 @@ public class Todo {
     private String title;
     private Boolean urgent = false;
     private Boolean done = false;
+    private Date mydate = new Date();
+
 
     public Todo() {
     }
@@ -23,6 +26,28 @@ public class Todo {
         this.urgent = urgent;
         this.done = done;
     }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setUrgent(Boolean urgent) {
+        this.urgent = urgent;
+    }
+
+    public void setDone(Boolean done) {
+        this.done = done;
+    }
+
+    public Date getMydate() {
+        return mydate;
+    }
+
+
 
     public Todo(String title) {
         this.title = title;
