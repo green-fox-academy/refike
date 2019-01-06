@@ -2,11 +2,18 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Thymeleaf Exercise #</title>
-    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link href="/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css" rel="stylesheet"/>
+
     <meta charset="utf-8"/>
 </head>
-<body>
-<table>
+<body class="container">
+<div>
+    <p><a th:href="@{/account/add}" class="btn btn-warning">Add new account</a></p>
+    <button onclick="location.href='/account/add'" type="button">Add new member</button>
+
+
+</div>
+<table class="table table-striped">
     <thead>
     <tr class="menu">
         <th>ID</th>
@@ -14,18 +21,22 @@
         <th>Balance</th>
         <th>Animal type</th>
         <th>Is king</th>
+        <th>Raise Balance</th>
     </tr>
     </thead>
 
     <tbody>
 
-    <tr th:style="${account.getKing()} ? 'background-color : red'" th:each=" account : ${accounts}">
+    <tr th:style="${account.getKing()} ? 'background-color : gold'" th:each=" account : ${accounts}">
 
         <td th:text="${accountStat.index}"></td>
         <td th:text="${account.name}"></td>
         <td th:text="${#numbers.formatDecimal(account.balance,0,2) + ' Zeb'}"></td>
         <td th:text="${account.animalType}"></td>
         <td th:text="${account.getKing()}"></td>
+        <td><a th:href="@{/raise/{name} (name = ${account.getName()})}" th:text="'+'"></a></td>
+
+
 
     </tr>
 
@@ -33,6 +44,11 @@
     </tbody>
 </table>
 
-<button onclick="location.href='http://localhost:8080/account/add'" type="button">Add new member</button>
+
+
+
+<script src="/webjar s/jquery/1.11.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
 </body>
 </html>

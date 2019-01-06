@@ -15,6 +15,7 @@ public class UsefulController {
     }
 
 
+    // ezen az endpointon tudom beirogatni az emailt is hogy valid-e, meg a cézárhoz ami kell.
     @GetMapping("/useful")
     public String showBaseTwo(Model model) {
         model.addAttribute("email", utilityService.email);

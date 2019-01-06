@@ -64,17 +64,20 @@ public class homeController {
 
     @GetMapping("/Average-stock")
     public String getAverageStock(Model model) {
+        model.addAttribute("items", itemsList);
+
         model.addAttribute("average",itemsList.stream()
                 .mapToDouble(ShopItem::getQuantity)
                 .average()
                 .orElse(0));
-        return "averageStock";
+        return "home";
         // stream().collect(Collectors.averagingDouble(item -> item.getQuantity()))
 
     }
 
     @GetMapping("/Most-expensive")
     public String mostExpensive(Model model) {
+
         model.addAttribute("items", itemsList.stream()
                 .sorted(Comparator.comparing(ShopItem::getPrice).reversed())
                 .collect(Collectors.toList()).get(0));
