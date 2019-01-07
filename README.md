@@ -1,7 +1,9 @@
 # refike
 
-[hello-world](https://github.com/refike/hello-world) 
+[Seadog Syllabus](https://github.com/green-fox-academy/seadog-syllabus) 
 
-[patchwork](https://github.com/refike/patchwork)
+[Wanderer Adventure Game](https://github.com/refike/wanderer-java)
 
-[git-lesson-repository](https://github.com/refike/git-lesson-repository)
+[Todo WebApp](https://github.com/refike/hostingheroku)
+
+[RedditClone Projket](https://github.com/refike/redditprojekt)
